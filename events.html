@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Yale School of Art</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <div class="logo-image">
+                <svg viewBox="0 0 100 100">
+                    <line x1="10" y1="10" x2="90" y2="90" stroke="white" stroke-width="2"/>
+                    <line x1="90" y1="10" x2="10" y2="90" stroke="white" stroke-width="2"/>
+                </svg>
+            </div>
+            <span class="logo-text">Yale School of Art</span>
+        </a>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="apply.html">Apply</a>
+            <a href="exhibition.html">Exhibition</a>
+            <a href="events.html">Events</a>
+            <a href="news.html">News</a>
+        </nav>
+        <a href="#" class="login-btn">Log in</a>
+    </header>
+
+    <main class="main-content">
+        <div class="events-layout">
+            <div class="events-main">
+                <section class="gallery-section">
+                    <h1 class="section-title">Events Calendar</h1>
+                    <div class="tabs">
+                        <div class="tab active" onclick="showView('calendar')">Calendar View</div>
+                        <div class="tab" onclick="showView('grid')">Grid View</div>
+                    </div>
+
+                    <!-- Calendar View -->
+                    <div id="calendar-view" class="calendar-view">
+                        <div class="event-item">
+                            <div class="date">Mar 15</div>
+                            <div class="event-image">
+                                <img src="./images/springexhibitionopening.jpg" alt="Spring Exhibition Opening">
+                            </div>
+                            <div class="event-details">
+                                <h3>Spring Exhibition Opening</h3>
+                                <p>Join us for the opening reception of our Spring Exhibition</p>
+                            </div>
+                        </div>
+
+                        <div class="event-item">
+                            <div class="date">Apr 5</div>
+                            <div class="event-image">
+                                <img src="./images/artisttalkseries.png" alt="Artist Talk Series">
+                            </div>
+                            <div class="event-details">
+                                <h3>Artist Talk Series</h3>
+                                <p>Featured guest speakers from the contemporary art world</p>
+                            </div>
+                        </div>
+
+                        <div class="event-item">
+                            <div class="date">May 1</div>
+                            <div class="event-image">
+                                <img src="./images/studentshowcaseopening.jfif" alt="Student Showcase Opening">
+                            </div>
+                            <div class="event-details">
+                                <h3>Student Showcase Opening</h3>
+                                <p>Celebrating the work of Yale's emerging artists</p>
+                            </div>
+                        </div>
+
+                        <div class="event-item">
+                            <div class="date">Jun 15</div>
+                            <div class="event-image">
+                                <img src="./images/summercollection.jpg" alt="Summer Collection Preview">
+                            </div>
+                            <div class="event-details">
+                                <h3>Summer Collection Preview</h3>
+                                <p>Special preview of our summer exhibition</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grid View -->
+                    <div id="grid-view" class="grid-view" style="display: none;">
+                        <div class="grid-item">
+                            <div class="event-image">
+                                <img src="./images/springexhibitionopening.jpg" alt="Spring Exhibition Opening">
+                            </div>
+                            <div class="event-details">
+                                <div class="date">Mar 15</div>
+                                <h3>Spring Exhibition Opening</h3>
+                                <p>Join us for the opening reception of our Spring Exhibition</p>
+                            </div>
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="event-image">
+                                <img src="./images/artisttalkseries.png" alt="Artist Talk Series">
+                            </div>
+                            <div class="event-details">
+                                <div class="date">Apr 5</div>
+                                <h3>Artist Talk Series</h3>
+                                <p>Featured guest speakers from the contemporary art world</p>
+                            </div>
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="event-image">
+                                <img src="./images/studentshowcaseopening.jfif" alt="Student Showcase Opening">
+                            </div>
+                            <div class="event-details">
+                                <div class="date">May 1</div>
+                                <h3>Student Showcase Opening</h3>
+                                <p>Celebrating the work of Yale's emerging artists</p>
+                            </div>
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="event-image">
+                                <img src="./images/summercollection.jpg" alt="Summer Collection Preview">
+                            </div>
+                            <div class="event-details">
+                                <div class="date">Jun 15</div>
+                                <h3>Summer Collection Preview</h3>
+                                <p>Special preview of our summer exhibition</p>
+                            </div>
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="event-image">
+                                <img src="./images/facultyexhibition.jfif" alt="Faculty Exhibition">
+                            </div>
+                            <div class="event-details">
+                                <div class="date">Jul 10</div>
+                                <h3>Faculty Exhibition</h3>
+                                <p>Showcasing works by Yale's esteemed faculty members</p>
+                            </div>
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="event-image">
+                                <img src="./images/alumnishowcase.jpg" alt="Alumni Showcase">
+                            </div>
+                            <div class="event-details">
+                                <div class="date">Aug 5</div>
+                                <h3>Alumni Showcase</h3>
+                                <p>Recent works by Yale School of Art alumni</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <a href="#" class="view-details">Previous Events</a>
+                        <a href="#" class="view-details">More Events</a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="events-sidebar">
+                <div class="location-box">
+                    <h3>Calendar Information</h3>
+                    <p>Welcome to the School of Art's public events calendar, initiated in the summer of 2020. To stay updated on new events as they're confirmed, all members of the public are invited to subscribe this calendar to their own calendaring software by clicking the "Subscribe" button below.</p>
+                    <div class="subscribe-btn">
+                        <a href="#" class="view-details">Subscribe</a>
+                    </div>
+                </div>
+                <div class="location-box">
+                    <p>For events open to the Yale community, view our Yale Calendar listings at <a href="#" class="link">bit.ly/SoACalendar</a> >></p>
+                    <p class="editor-info">Editor details</p>
+                    <p>Yale School of Art Land Acknowledgement <a href="#" class="link">></a></p>
+                    <p class="editor-info">Editor details</p>
+                </div>
+                <div class="location-box">
+                    <p>Simplified calendar view available at <a href="#" class="link">yaleart.org/publicevents</a> >></p>
+                    <p class="editor-info">Editor details</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-boxes">
+                <div class="footer-box">
+                    <h3>Yale</h3>
+                    <ul>
+                        <li><a href="#">Staff</a></li>
+                        <li><a href="#">Faculty</a></li>
+                        <li><a href="#">Students</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Galleries</a></li>
+                        <li><a href="#">Art Gallery</a></li>
+                        <li><a href="#">Showcases</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <h3>Social</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p>&copy; 2025 - Yale, Inc. All rights reserved. New Haven, CT</p>
+        </div>
+    </footer>
+
+    <script>
+        function showView(view) {
+            const calendarView = document.getElementById('calendar-view');
+            const gridView = document.getElementById('grid-view');
+            const tabs = document.querySelectorAll('.tab');
+            
+            if (view === 'calendar') {
+                calendarView.style.display = 'flex';
+                gridView.style.display = 'none';
+                tabs[0].classList.add('active');
+                tabs[1].classList.remove('active');
+            } else {
+                calendarView.style.display = 'none';
+                gridView.style.display = 'grid';
+                tabs[0].classList.remove('active');
+                tabs[1].classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
